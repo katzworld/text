@@ -8,7 +8,7 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 fd = open(sys.argv[1], 'r')
-#fd open xml with export and a wild card for the date
+#fd open xml from command line argument
 xml_file = fd.read()
 soup = BeautifulSoup(xml_file, 'xml')
 #iterate through xml file and get quanity from ItemQuanity and part number from PartName
