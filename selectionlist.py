@@ -23,6 +23,7 @@ with open(filename, "w",  newline='') as f:
             child.find("ItemQuantity").text
             child.find("PartName").text
 #            child.find("PartItemDescription").text
-            writer.writerows([(child.find("ItemQuantity").text, child.find("PartName").text)])
+            writer.writerows([(child.find('PartName').text, child.find('ItemQuanity').text)]) #partnumb,qu
+#Quan, num            writer.writerows([(child.find("ItemQuantity").text, child.find("PartName").text)])
 #            print(child.find("ItemQuantity").text, child.find("PartName").text)
 fd.close()
